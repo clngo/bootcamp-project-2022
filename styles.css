@@ -268,3 +268,73 @@ p {
   font-size: 16px;
 }
 
+
+/* Blog post styling */
+.blog-post {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.blog-post h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.blog-post small {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.blog-post p {
+  font-size: 16px;
+  color: #555;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.page-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
