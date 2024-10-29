@@ -1,0 +1,35 @@
+/* navbar.module.css */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Aligns logo and nav links */
+    align-items: center; /* Vertically centers items */
+    padding: 1rem 2rem; /* Adds padding to the navbar */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.logo {
+    font-size: 1.8rem; /* Size of the logo text */
+    font-weight: bold; /* Makes the logo text bold */
+}
+
+.navList {
+    list-style: none; /* Removes bullet points from list */
+    display: flex; /* Displays list items in a row */
+    gap: 2rem; /* Space between each nav item */
+}
+
+.navList li {
+    margin: 0; /* Resets margin */
+}
+
+.navList a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark text color */
+    font-weight: 500; /* Medium font weight for links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.navList a:hover {
+    color: #0070f3; /* Changes color on hover */
+}
