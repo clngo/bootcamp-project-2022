@@ -8,13 +8,7 @@ export default function Home() {
         <h1 className={styles.pageTitle}>Colin Ngo</h1>
         <div className={styles.about}>
           <div className={styles.aboutImage}>
-            <Image
-              src="/colin.png"
-              alt="A video of an image of the sky and clouds being too big"
-              width={180}
-              height={180}
-              priority
-            />
+            lol
           </div>
           <div className={styles.aboutText}>
             <p>

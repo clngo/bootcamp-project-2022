@@ -9,7 +9,7 @@ type IParam = {
 }
 
 // If { params } looks confusing, check the note below this code block
-export async function GET(req: NextRequest, { params }: IParam) {
+export async function GET(req: NextRequest, { params }: IParam, _res: NextResponse) {
   await connectDB() // function from db.ts before
   const { slug } = params // another destructure
 
