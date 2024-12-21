@@ -27,7 +27,7 @@ async function getBlog(slug: string) {
 // The Blog component
 export default async function Blog({params }: Props) {
     const slug = (await params).slug
-        const blog = await getBlog(slug);
+    const blog = await getBlog(slug);
   // Handle case where the blog post is not found
   if (!blog) {
     return (

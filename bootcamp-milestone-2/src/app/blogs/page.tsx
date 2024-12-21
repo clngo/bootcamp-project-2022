@@ -32,7 +32,23 @@ export default async function Blog() {
                   <li key={blog._id} className={styles.blogItem}>
                     <h3 className={styles.blogPostTitle}>{blog.title}</h3>
                     <p className={styles.blogPostDate}>
-                      {new Date(blog.date).toLocaleDateString()}
+                      {new Date(blog.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </p>
+                    <p className={styles.blogPostDescription}>
+                      {blog.description}
+                    </p>
+                    <p className={styles.commentCount}>
+                      {blog.comments?.length > 0
+                        ? `${blog.comments.length} ${
+                            blog.comments.length === 1
+                              ? "comment"
+                              : "comments"
+                          }`
+                        : "No comments yet"}
                     </p>
                   </li>
                 ))}
